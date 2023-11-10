@@ -924,7 +924,49 @@ footer {
 
 /* Quem somos */
 
+.titulo-origem-vidro {
+    background-color: rgba(0, 162, 255, 0.932);
+    box-shadow: 0 0.1rem 0.5rem #494949;
 
+    margin-top: 50px;
+    
+    padding: 50px 0px 50px 0px;
+}
 
+.titulo-origem-vidro h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.411) 0 2px;
+    font-size: 2.5rem;
+}
+
+#t1 {
+    font-size: 3.5rem;
+}
+
+.texto-origem-vidro {
+    width: 1100px;
+    height: 77vh;
+    background-color: #ebe9e9;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096);
+
+    margin-left: 370px;
+    margin-top: 100px;
+
+    border-radius: 10px;
+}
+
+.texto-origem-vidro h3 {
+    font-size: 1.8rem;
+
+    padding: 20px 0px 0px 30px;
+}
+
+.texto-origem-vidro p {
+    padding-left: 30px;
+    padding-top: 10px;
+
+    text-align: justify;
+}
 
 
