@@ -747,9 +747,10 @@ footer {
 }
 
 .cx-img-outros-servicos h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #fff;
 }
+
 .cx-img-outros-servicos p {
     position: absolute;
     text-align: justify;
@@ -823,9 +824,10 @@ footer {
 }
 
 .cx-img-outros-servicos-2 h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #fff;
 }
+
 .cx-img-outros-servicos-2 p {
     position: absolute;
     text-align: justify;
@@ -854,4 +856,75 @@ footer {
     margin-left: 49px;
     margin-top: 317px
 }
+
+#n-servico-2 {
+    position: absolute;
+
+    background-color: rgb(0, 162, 255);
+    box-shadow: 0 0.1rem 0.5rem #2e2e2e;
+    border-radius: 5px;
+
+    padding: 5px 40px;
+
+    margin-left: 24px;
+    margin-top: 317px;
+}
+
+#n-servico-3 {
+    position: absolute;
+
+    background-color: rgb(0, 162, 255);
+    box-shadow: 0 0.1rem 0.5rem #2e2e2e;
+    border-radius: 5px;
+
+    padding: 5px 40px;
+
+    margin-left: 30px;
+    margin-top: 317px;
+}
+
+#n-servico-4 {
+    position: absolute;
+
+    background-color: rgb(0, 162, 255);
+    box-shadow: 0 0.1rem 0.5rem #2e2e2e;
+    border-radius: 5px;
+
+    padding: 5px 40px;
+
+    margin-left: 27px;
+    margin-top: 317px;
+}
+
+#n-servico-5 {
+    position: absolute;
+
+    background-color: rgb(0, 162, 255);
+    box-shadow: 0 0.1rem 0.5rem #2e2e2e;
+    border-radius: 5px;
+
+    padding: 5px 40px;
+
+    margin-left: 60px;
+    margin-top: 317px;
+}
+
+#n-servico-6 {
+    position: absolute;
+
+    background-color: rgb(0, 162, 255);
+    box-shadow: 0 0.1rem 0.5rem #2e2e2e;
+    border-radius: 5px;
+
+    padding: 5px 40px;
+
+    margin-left: 15px;
+    margin-top: 317px;
+}
+
+/* Quem somos */
+
+
+
+
 
