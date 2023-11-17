@@ -1054,4 +1054,51 @@ footer {
     border-radius: 10px;
 }
 
+.conteudo-contato2 {
+    margin-top: 100px;
+}
+
+.subtitulo-contato2 {
+    width: 1100px;
+
+    text-align: center;
+
+    padding-top: 70px;
+    margin-left: 370px;
+
+}
+
+.subtitulo-contato2 h2 {
+    font-size: 2rem;
+}
+
+.subtitulo-contato2 p {
+    font-size: 1.2rem;
+
+    padding-top: 15px;
+}
+
+.contatos2 {
+    display: flex;
+    justify-content: center;
+    gap: 220px;
+    font-size: 1.4rem;
+
+    /*
+    width: 1100px;
+    height: 77vh;
+    background-color: #ebe9e9;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.096);
+    */
+
+    margin-top: 100px;
+    margin-left: 100px;
+
+    border-radius: 10px;
+}
+
+.cartao p {
+    width: 300px;
+}
+
 
