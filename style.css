@@ -12,7 +12,7 @@
 body {
     background: white;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     
 }
 
@@ -21,7 +21,7 @@ header {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
 }
 
 .logo-whatsapp {
@@ -111,7 +111,7 @@ main {
 }
 
 .home {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -277,13 +277,13 @@ input {
 /* Servicos */
 
 .servicos {
-    width: 100vw;
+    width: 100%;
     height: 800px;
     background-color: rgba(0, 162, 255, 0.932);
 }
 
 .servicos h3 {
-    width: 100vw;
+    width: 100%;
     display: flex;
     position: absolute;
     justify-content: center;
@@ -641,7 +641,7 @@ strong {
 /* Footer */
 
 footer {
-    width: 100vw;
+    width: 100%;
     height: 400px;
     bottom: 0px;
     background: #111111ee;
