@@ -72,43 +72,33 @@ main {
     font-weight: 600;
 }
 
-.navegacao ul {
+.nav-menu {
     display: flex;
-    align-items: center;
     gap: 5rem;
-}
 
-.navegacao ul li a {
-    color: black;
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.5s ease-in-out;
-}
-
-.navegacao ul li a:hover {
-    background-color: rgba(0, 162, 255, 0.932);
-    border-radius: 8px;
-}
-
-.menu {
-    cursor: pointer;
     
 }
 
-.menu .barra {
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 3px;
-    background: black;
-    margin: 5px auto;
-    transition: all 0.3s;
+.nav-item {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
 }
 
-.menu .barra:nth-child(1),
-.menu .barra:nth-child(3) {
-    background: rgba(0, 162, 255, 0.932);
+.nav-item:hover {
+    background-color: rgba(0, 162, 255, 0.932);
+    
 }
+
+.menu-mobile {
+    cursor: pointer;
+}
+
+/* Fim header */
+
+/* Home */
 
 .home {
     width: 100%;
@@ -153,8 +143,6 @@ main {
     background-color: transparent;
     color: black;
 }
-
-/* Fim header */
 
 /* Texto-home */
 
@@ -410,11 +398,14 @@ input {
     border: 2px solid black;
 }
 
+/*Quem somos*/
+
 .quem-somos {
     width: 100%;
-    height: 700px;
+    min-height: 700px;
+
     display: flex;
-    position: relative;
+    flex-direction: column;
 
     margin-top: 200px;
 }
@@ -444,10 +435,12 @@ input {
 }
 
 .cx-img-quem-somos {
+    max-width: 500px;
+    height: auto;
+
     display: flex;
-    position: absolute;
-    width: 50vh;
-    height: 573px;
+    justify-content: center;
+    align-items: center;
 
     background-color: black;
     border-radius: 20px;
@@ -466,6 +459,8 @@ input {
 strong {
     color: rgba(0, 162, 255, 0.932);
 }
+
+/*fim Quem somos*/
 
 .texto-quem-somos .saiba-mais2 {
     padding: 10px 20px;
@@ -490,6 +485,8 @@ strong {
 
     transition: all .3s ease;
 }
+
+/*descricao*/
 
 .descricao {
     width: 100%;
@@ -637,6 +634,8 @@ strong {
     left: 450px;
     gap: 29px;
 }
+
+/* fim descricao*/
 
 /* Footer */
 
@@ -1101,14 +1100,387 @@ footer {
     width: 300px;
 }
 
-@media only screen and (max-width: 1024px) {
-    .home {
-      flex-direction: column-reverse;
-      text-align: center;
+/*responsividade*/
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 100%;
+        box-shadow: 0 0.1rem 0.5rem #ccc;
+        padding: 10px 0;
     }
 
-    .content {
-        
+    .nav-menu.active {
+        display: flex;
     }
-  
-  }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .nav-item {
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 50px 5%;
+    }
+
+    .home-text {
+        max-width: 100%;
+    }
+
+    .home-texto .texto2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .home .home-btn {
+        font-size: 1rem;
+        padding: 12px 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 40px 5%;
+    }
+
+    .home-texto .texto1 {
+        font-size: 1.2rem;
+    }
+
+    .home-texto .texto2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .home .home-btn {
+        font-size: 0.9rem;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        padding: 30px 5%;
+    }
+
+    .home-texto .texto1 {
+        font-size: 1rem;
+    }
+
+    .home-texto .texto2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .home .home-btn {
+        font-size: 0.85rem;
+        padding: 8px 25px;
+    }
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 1024px) {
+    .content {
+        width: 90%;
+        height: 400px;
+        left: 50%;
+        bottom: 15%;
+    }
+
+    .navigation {
+        bottom: 180px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bar {
+        width: 12px;
+        height: 12px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 95%;
+        height: 320px;
+        bottom: 10%;
+    }
+
+    .navigation {
+        bottom: 140px;
+    }
+
+    .bar {
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 100%;
+        height: 250px;
+        bottom: 5%;
+    }
+
+    .navigation {
+        bottom: 110px;
+    }
+
+    .bar {
+        width: 8px;
+        height: 8px;
+        margin: 6px;
+    }
+}
+
+/* Estilos responsivos para a seção de serviços */
+
+@media (max-width: 1024px) {
+    .servicos {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .servicos h3 {
+        font-size: 2rem;
+        text-align: center;
+        position: relative;
+        padding-top: 30px;
+    }
+
+    .fotos-servicos {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .cx-fotos-servicos {
+        width: 250px;
+        height: 350px;
+        margin-top: 100px;
+    }
+
+    .cx-fotos-servicos img {
+        height: 30vh;
+        width: 100%;
+    }
+
+    .cx-fotos-servicos .titulo-servico {
+        font-size: 1.2rem;
+    }
+
+    .servicos .saiba-mais {
+        position: relative;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos h3 {
+        font-size: 1.8rem;
+        padding-top: 20px;
+    }
+
+    .cx-fotos-servicos {
+        width: 220px;
+        height: 320px;
+    }
+
+    .cx-fotos-servicos img {
+        height: 28vh;
+    }
+
+    .cx-fotos-servicos .titulo-servico {
+        font-size: 1.1rem;
+    }
+
+    .servicos .saiba-mais {
+        padding: 8px 18px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicos h3 {
+        font-size: 1.5rem;
+    }
+
+    .cx-fotos-servicos {
+        width: 100%;
+        max-width: 200px;
+        height: 300px;
+    }
+
+    .cx-fotos-servicos img {
+        height: 25vh;
+    }
+
+    .cx-fotos-servicos .titulo-servico {
+        font-size: 1rem;
+    }
+
+    .servicos .saiba-mais {
+        font-size: 0.9rem;
+        padding: 7px 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .quem-somos {
+        margin-top: 150px;
+    }
+
+    .texto-quem-somos {
+        padding: 0 10%;
+        text-align: center;
+    }
+
+    .quem-somos p {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .quem-somos {
+        margin-top: 100px;
+    }
+
+    .texto-quem-somos {
+        padding: 0 5%;
+    }
+
+    .quem-somos h3 {
+        font-size: 1.8rem;
+    }
+
+    .quem-somos p {
+        font-size: 1.1rem;
+    }
+
+    .cx-img-quem-somos {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    .quem-somos {
+        margin-top: 80px;
+    }
+
+    .quem-somos h3 {
+        font-size: 1.5rem;
+    }
+
+    .quem-somos p {
+        font-size: 1rem;
+    }
+
+    .cx-img-quem-somos {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .descricao {
+        margin-top: 150px;
+    }
+
+    .texto-descricao {
+        padding: 0 10%;
+    }
+
+    .texto-descricao p {
+        width: 90%;
+    }
+
+    .checked {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .descricao {
+        margin-top: 100px;
+    }
+
+    .texto-descricao h2 {
+        font-size: 2rem;
+    }
+
+    .texto-descricao h3 {
+        font-size: 1.8rem;
+    }
+
+    .texto-descricao p {
+        font-size: 1.1rem;
+    }
+
+    .cx-img-descricao {
+        max-width: 450px;
+    }
+
+    .checked {
+        max-width: 500px;
+    }
+
+    .garantia h4, .confiabilidade h4, .qualidade h4, .funcionalidade h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .descricao {
+        margin-top: 80px;
+    }
+
+    .texto-descricao h2 {
+        font-size: 1.7rem;
+    }
+
+    .texto-descricao h3 {
+        font-size: 1.5rem;
+    }
+
+    .texto-descricao p {
+        font-size: 1rem;
+    }
+
+    .cx-img-descricao {
+        max-width: 350px;
+    }
+
+    .checked {
+        max-width: 400px;
+    }
+
+    .garantia h4, .confiabilidade h4, .qualidade h4, .funcionalidade h4 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+

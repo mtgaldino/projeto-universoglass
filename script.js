@@ -9,3 +9,10 @@ setInterval(function(){
     }
 
 }, 3000);
+
+const menuMobile = document.querySelector('.menu-mobile');
+const navMenu = document.querySelector('.nav-menu');
+
+menuMobile.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
